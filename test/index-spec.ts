@@ -1,5 +1,5 @@
 import test from "ava";
-import {RandomChar} from "../src/index";
+import { RandomChar } from "../src/index";
 
 const rc = new RandomChar();
 

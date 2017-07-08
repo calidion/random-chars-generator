@@ -8,7 +8,7 @@ export class RandomChar {
   }
   private getGB2312() {
     const HMAX = 0xf7;
-    const HMIN = 0xa1;
+    const HMIN = 0xb0;
     const LMAX = 0xfe;
     const LMIN = 0xa1;
     const high = this.range(HMAX, HMIN);
