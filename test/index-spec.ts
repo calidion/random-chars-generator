@@ -24,3 +24,18 @@ test("Should generate simplified chinese chars", t => {
   t.truthy(char2.charCodeAt(0) <= 0x9fff);
   t.truthy(char2.charCodeAt(0) >= 0x4e00);
 });
+
+test("Should generate big5 chinese chars", t => {
+  const chars = [
+    rc.traditional(),
+    rc.traditional(),
+    rc.traditional(),
+    rc.traditional(),
+    rc.traditional(),
+    rc.traditional(),
+    rc.traditional(),
+    rc.traditional()
+  ];
+  console.log(chars);
+  t.truthy(chars[0] !== chars[1]);
+});

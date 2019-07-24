@@ -1,7 +1,7 @@
 {
-  "name": "random-char-cn",
-  "version": "0.1.1",
-  "description": "random-char-cn",
+  "name": "random-chars",
+  "version": "0.1.0",
+  "description": "Random chars generation for different languages",
   "license": "MIT",
   "repository": "",
   "author": "",
