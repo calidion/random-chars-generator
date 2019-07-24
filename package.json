@@ -1,12 +1,17 @@
 {
-  "name": "random-chars",
+  "name": "random-chars-generator",
   "version": "0.1.0",
   "description": "Random chars generation for different languages",
   "license": "MIT",
   "repository": "",
   "author": "",
   "keywords": [
-    ""
+    "random",
+    "chars",
+    "cjk",
+    "gbk",
+    "big5",
+    "gb2312"
   ],
   "files": [
     "lib"

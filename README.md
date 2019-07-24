@@ -8,7 +8,7 @@
 ## Install
 
 ```
-npm i random-chars
+npm i random-chars-generator
 ```
 
 # Usage
