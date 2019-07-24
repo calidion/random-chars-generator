@@ -14,7 +14,7 @@ npm i random-chars-generator
 # Usage
 
 ```ts
-import { RandomChar } from "random-char-cn";
+import { RandomChar } from "random-chars-generator";
 
 const rc = new RandomChar();
 
@@ -23,4 +23,8 @@ rc.all();
 
 // 生成常用简体汉字
 rc.simplified();
+
+// 生成常用繁体汉字
+rc.traditional();
+
 ```
