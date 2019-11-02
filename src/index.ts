@@ -90,9 +90,9 @@ export class RandomChar {
   }
 
   private getBIG5Normal() {
-    const HMAX = 0xfe;
-    const HMIN = 0xa0;
-    const LMAX = 0x81;
+    const HMAX = 0xc6;
+    const HMIN = 0xa4;
+    const LMAX = 0x7e;
     const LMIN = 0x40;
     const high = this.range(HMAX, HMIN);
     const low = this.range(LMAX, LMIN);
