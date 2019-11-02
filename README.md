@@ -16,15 +16,23 @@ npm i random-chars-generator
 ```ts
 import { RandomChar } from "random-chars-generator";
 
-const rc = new RandomChar();
+// generate random char with locales
+// locales can be found here: http://www.lingoes.net/en/translator/langcode.htm
 
-// 生成所有汉字
-rc.all();
+// Generate english chars
+const enChar = RandomChar.generate("en");
+const enChar = RandomChar.generate("en-US");
 
-// 生成常用简体汉字
-rc.simplified();
+// Generate chinese chars
 
-// 生成常用繁体汉字
-rc.traditional();
+// simplified/简体
+const zhChar = RandomChar.generate("zh");
+const zhChar = RandomChar.generate("zh-CN");
+const zhChar = RandomChar.generate("zh-SG");
+// simplified/繁体
+const zhChar = RandomChar.generate("zh-TW");
+const zhChar = RandomChar.generate("zh-HK");
 
 ```
+
+
