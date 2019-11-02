@@ -1,6 +1,6 @@
-import * as assert  from "assert";
+import * as assert from "assert";
 import test from "ava";
-import { RandomChar } from '../src/index';
+import { RandomChar } from "../src/index";
 
 const rc = new RandomChar();
 
@@ -49,21 +49,21 @@ test("Should generate", t => {
     RandomChar.generate("zh-HK"),
     RandomChar.generate("zh-TW"),
     RandomChar.generate("zh-SG"),
-    RandomChar.generate("en", 'upper'),
-  ]
+    RandomChar.generate("en", "upper")
+  ];
   console.log(chars);
   t.truthy(chars[0] !== chars[2]);
   t.truthy(chars[2] !== chars[3]);
   try {
     RandomChar.generate("abc");
     assert(false);
-  } catch(e) {
+  } catch (e) {
     assert(true);
   }
   try {
     RandomChar.generate();
     assert(false);
-  } catch(e) {
+  } catch (e) {
     assert(true);
   }
 });

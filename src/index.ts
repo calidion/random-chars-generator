@@ -1,37 +1,35 @@
 import * as iconv from "iconv-lite";
 export class RandomChar {
-
-
   /**
    * @param locale String
-   * 
+   *
    * locales can be found here: http://www.lingoes.net/en/translator/langcode.htm
    * @param case String [upper|lower]
    */
   public static generate(locale: string = "", charCase: string = ""): string {
     const rc = new RandomChar();
     switch (locale) {
-      case 'zh':
-      case 'zh-CN':
-      case 'zh-SG':
+      case "zh":
+      case "zh-CN":
+      case "zh-SG":
         return rc.simplified();
-      case 'zh-TW':
-      case 'zh-HK':
-      case 'zh-MO':
+      case "zh-TW":
+      case "zh-HK":
+      case "zh-MO":
         return rc.traditional();
-      case 'en':
-      case 'en-AU':
-      case 'en-CA':
-      case 'en-CB':
-      case 'en-GB':
-      case 'en-IE':
-      case 'en-JM':
-      case 'en-NZ':
-      case 'en-PH':
-      case 'en-TT':
-      case 'en-ZA':
-      case 'en-ZW':
-      case 'en-US':
+      case "en":
+      case "en-AU":
+      case "en-CA":
+      case "en-CB":
+      case "en-GB":
+      case "en-IE":
+      case "en-JM":
+      case "en-NZ":
+      case "en-PH":
+      case "en-TT":
+      case "en-ZA":
+      case "en-ZW":
+      case "en-US":
         return rc.alpha(charCase);
       default:
         throw new Error("Locale Not Supported!");
@@ -41,12 +39,12 @@ export class RandomChar {
   public alpha(charCase: string) {
     let a;
     let z;
-    if (charCase === 'upper') {
-      a = 'a'.charCodeAt(0);
-      z = 'z'.charCodeAt(0);
+    if (charCase === "upper") {
+      a = "a".charCodeAt(0);
+      z = "z".charCodeAt(0);
     } else {
-      a = 'A'.charCodeAt(0);
-      z = 'Z'.charCodeAt(0);
+      a = "A".charCodeAt(0);
+      z = "Z".charCodeAt(0);
     }
 
     const variant = Math.floor(Math.random() * (z - a));
